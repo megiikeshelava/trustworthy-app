@@ -1,0 +1,100 @@
+
+
+body{
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    gap: 49px;
+    background-color: #394508;
+    padding-inline: 40px 125px;
+    padding-top: 30px;
+    height: auto;
+
+    a{
+        color: black;
+    }
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+
+    .logo{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        p{
+            color: white;
+        }
+    }
+
+    a.btn{
+        padding: 11px 14px;
+        background-color: #D2FD9C;
+        font-size: 13px;
+        border-radius: 2px;
+    }
+}
+
+.content{
+    max-width: 355px;
+
+    h1{
+        font-size: 42px;
+        text-transform: capitalize;
+        color: white;
+        margin-bottom: 20px;
+
+        span{
+            color: #D2FD9C;
+        }
+    }
+    p{
+        font-size: 16px;
+        color: #CBCBCB;
+    }
+}
+
+.offerings{
+    h5{
+        font-size: 12px;
+        color: #D2FD9C;
+    }
+    .wrapper{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-top: 20px;
+
+        a.card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 14px;
+            padding: 24px 10px;
+            background-color: #619111;
+            border-radius: 4px;
+
+            p{
+                max-width: 91px;
+            }
+        }
+    }
+}
+
+nav.aside-nav{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    a{
+        color: #D2FD9C;
+    }
+}
+
+

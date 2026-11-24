@@ -1,9 +1,25 @@
 
 
 .container{
-    min-width: 1280%;
     width: 100%;
+    min-width: 1280px;
     display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.main-wrapper{
+    flex:2;
+}
+
+    
+
+a.btn{
+    padding: 11px 14px;
+    background-color: #D2FD9C;
+    font-size: 13px;
+    border-radius: 2px;
 }
 
 section{
@@ -14,6 +30,7 @@ section{
         color: #394508;
         text-transform: capitalize;
         line-height: 105%;
+        color: black;
     }
 
 }
@@ -26,10 +43,12 @@ aside{
     padding-inline: 40px 125px;
     padding-top: 30px;
     height: auto;
+    flex:1;
 
     a{
         color: black;
     }
+
     header{
         display: flex;
         justify-content: space-between;
@@ -41,13 +60,6 @@ aside{
             p{
                 color: white;
             }
-        }
-    
-        a.btn{
-            padding: 11px 14px;
-            background-color: #D2FD9C;
-            font-size: 13px;
-            border-radius: 2px;
         }
     }
     .content{
@@ -225,7 +237,79 @@ main{
                     padding-top: 10px;
                 }
             }
+
+            ul{
+                padding-top: 30px;
+                display: flex;
+                justify-content: center;
+                gap: 40px;
+
+                li{
+                    text-align: center;
+                    h5{
+                        padding-top: 15px;
+                    }
+                }
+            }
         }
+
+        .cta{
+            position: relative;
+            display: block;
+            max-width: 680px;  
+            
+            picture img{
+                z-index: 1;
+            }
+
+            h2{
+                z-index: 10;
+                bottom: 180px;
+                left: 80px;
+                position: absolute;
+                max-width: 310px;
+                color: white;
+                font-size: 32px;
+                transform: translateX(-15%);
+
+            }
+            a.btn{
+                position: absolute;
+                bottom: 134px;
+                left: 80px;
+                transform: translateX(-50%);
+                z-index: 10;
+            }
+        }
+    }
+}
+
+footer{
+    background-color: #EDEDED;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 140px;
+
+    .footer-wrapper{
+        display: flex;
+        justify-content: space-between;
+
+
+        h5{
+            color: #5D5D5D;
+            padding-bottom: 12px;
+        }
+        a{
+            color: black;
+        }
+
+
+        .contact-wrapper{
+            transform: translateX(-10%);
+        }
+        
     }
 }
 
